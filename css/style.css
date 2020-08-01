@@ -22,16 +22,28 @@ html a {
 body {
   background: #ffffff;
   margin: 0;
+  min-height: 100vh;
+  line-height: 1.5;
 }
 
 ul{
   padding: 0;
   margin: 0;
-  list-style-type: none;
+  list-style: none;
 }
 
-h3{
+h3 {
+  font-family: opensans;
+  font-weight: 700;
   font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 
@@ -195,19 +207,19 @@ h3{
   }
 
 .card_1{
-  background-image: url(https://github.com/VavaIkelman/mq-diplom/blob/master/images/trend1.jpg);
+  background-image: url(../images/trend1.jpg);
 }
 
 .card_2{
-  background-image: url(https://github.com/VavaIkelman/mq-diplom/blob/master/images/trend2.jpg);
+  background-image: url(../images/trend2.jpg);
 }
 
 .card_3{
-  background-image: url(https://github.com/VavaIkelman/mq-diplom/blob/master/images/trend3.jpg);
+  background-image: url(../images/trend3.jpg);
 }
 
 .card_4{
-  background-image: url(https://github.com/VavaIkelman/mq-diplom/blob/master/images/trend4.jpg);
+  background-image: url(../images/trend4.jpg);
 }
 
 .trend_card:nth-child(1n+2){
@@ -556,6 +568,151 @@ main {
   margin-left: 5px;
   vertical-align: super;
 }
+
+/*========================================================================================================================================================
+=======================SHOP============S=====================================
+============================================================================*/
+.wrapper_shop {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    font-family: opensans;
+    margin-bottom: 65px;
+}
+
+.title_shoper{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+    line-height: 2.4rem;
+    margin: 0;
+    align-items: auto;
+}
+.title_shoper::after {
+  content: "";
+  display: block;
+  margin: 14px auto 0;
+  width: 6.6rem;
+  border-bottom: 3px solid #e1d9bd;
+  margin-bottom: 2.5rem;
+}
+
+
+.container_products_list{
+
+}
+.products_list{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.product_list_item{
+ width: 30%;
+}
+
+.product_list_item:nth-child(1n+2){
+ margin-left: 5%;
+}
+
+.card_product{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relativ;
+  justify-content: space-between;
+}
+.product_item{
+  z-index: 2;
+  top:0;
+}
+.product_image{
+  margin: 0 auto;
+} 
+.border_product_description{
+  border: 3px solid #a88f54;
+  padding: 30px;
+  position: relative;
+  z-index: 3;
+  top: -30px;
+  bottom: 0;
+  height: 75%;
+  
+}
+.products_description_list{}
+.product_description{
+  font-weight: 400;
+  color: #000000;
+  font-size: 15px;
+  line-height: 22px;
+}
+.shop_link{
+  font-weight: 400;
+  color: #a88f54;
+  font-size: 15px;
+  line-height: 22px;
+
+}
+.shop_link:hover{
+  text-decoration: underline;
+}
+
+.product__footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+} 
+.product__prices{
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+
+} 
+.product__price{
+    color: #222;
+    font-weight: 700;
+    display: flex;
+    font-size: 14px;
+}
+.product__price_old{
+    text-decoration: line-through;
+} 
+
+.product__rub_old{
+    text-decoration: line-through;
+} 
+
+.product__price-value{
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+    line-height: 1;
+    display: flex;
+} 
+.product__rub {
+  font-size: 20px;
+    font-weight: 700;
+    color: #222;
+    line-height: 1;
+    display: flex;
+} 
+ 
+.product__button{
+  width: 50%;
+  height: 50px;
+  border: none;
+  background-color: #b59f5b;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 14px;
+  margin: auto;
+  padding: 
+} 
 
 /* ========FOOTER======== */
 
