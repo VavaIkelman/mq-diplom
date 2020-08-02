@@ -35,7 +35,7 @@ ul{
 h3 {
   font-family: opensans;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 200%;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
@@ -47,11 +47,46 @@ img {
 }
 
 
+
+
+
+
 /* ======================================================================
 ================================HEADER===================================
 ========================================================================= */
+
+@media (max-width: 640px){
+
+.header{
+  background-image: url(../images/banner-mobile.jpg);
+ }
+
+ .header-menu{
+  visibility: hidden;
+ }
+}
+
+@media (min-width: 641px) and (max-width: 1199px), (max-width: 640) and (orientation: landscape){
+.header{
+  background-image: url(../images/banner-bg-tablet.jpg);
+ }
+
+ .header-menu{
+  visibility: hidden;
+ }
+
+} 
+
+@media (min-width: 1200px){
+
 .header {
-  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
+  background-image: url(../images/banner-bg.jpg);
+ }
+}
+
+
+.header {
+  
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -75,7 +110,8 @@ img {
 .header-container {
   display: flex;
   box-sizing: border-box;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   flex-wrap: wrap;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -87,13 +123,16 @@ img {
 
 .logo {
   display: block;
-  width: 179px;
+  width: 15%;
   float: left;
   margin-left: 0;
 }
 
 .header-menu {
   margin-right: 0;
+  width: 85%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .header-menu-list {
@@ -102,14 +141,17 @@ img {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
+} 
+
+.header-menu-list-items{
+  width: 16.66%;
 }
 
 .header-menu-link {
   font-family: opensans;
   text-transform: uppercase;
   color: #ffffff;
-  font-size: 13px;
-  line-height: 36px;
+  font-size: 130%;
   margin-right: 40px;
 }
 
@@ -122,13 +164,12 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
-  width: 734px;
-  font-size: 45px;
-  line-height: 75px;
+  width: 61.16%;
+  font-size: 450%;
   text-align: center;
   position: relative;
   z-index: 1;
-  margin: 115px auto;
+  margin: 9.58% auto;
 }
 
 .intro p {
@@ -141,7 +182,7 @@ img {
 
 .container_trends {
   width: 100%;
-  height: 380px;
+  /*height: 380px;*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -165,9 +206,37 @@ img {
   content: "";
   display: block;
   margin: 14px auto 0;
-  width: 6.6rem;
+  width: 24.48%;
   border-bottom: 3px solid #e1d9bd;
   margin-bottom: 2.5rem;
+}
+@media(min-width: 641px) and (max-width: 1199px){
+.trends_cards_list{
+  flex-wrap: wrap;
+
+}
+
+.trend_card{
+  min-width: 50%;
+
+ }
+
+
+}
+
+@media(max-width: 640px){
+.trends_cards_list{
+  display: flex;
+  flex-wrap: nowrap;
+   }
+
+.trend_card{
+  min-width: 100%;
+ }
+ .trend_card:nth-child(2n+2){
+  margin-left: 0.5%;
+}
+ 
 }
 
 .trends_cards_list{
@@ -180,9 +249,6 @@ img {
   width: 24.28%;
   height: 100%;
   position: relative;
-  flex:1;
-
-  
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -277,9 +343,10 @@ border: 3px solid #a88f54;
 }
 
 .wrapper {
-  padding: 0 15px;
+  padding: 0 1.25%;
   margin: auto;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   box-sizing: border-box;
 }
 
@@ -288,7 +355,8 @@ main {
 }
 
 .page-main {
-  width: 780px;
+  width: 65%;
+  padding-right: 7.7%;
 }
 
 .post {
@@ -302,7 +370,8 @@ main {
 
 .img-post {
   display: block;
-  margin-right: 30px;
+  margin-right: 4%;
+  width: 54%;
 }
 
 .frame {
@@ -358,7 +427,7 @@ main {
 
 
 .sidebar {
-  width: 272px;
+  width: 35%;
   font-family: opensans;
 }
 
@@ -373,7 +442,7 @@ main {
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
-  font-size: 14px;
+  font-size: 140%;
   text-align: center;
   margin: 0 auto;
 }
@@ -410,7 +479,8 @@ main {
 
 .latest-posts-block-card-date {
   font-weight: 400;
-  color: #888888;ont-size: 12px;
+  color: #888888;
+  font-size: 120%;
   line-height: 20px;
 }
 
@@ -418,7 +488,7 @@ main {
   margin: 0;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 140%;
   line-height: 18px;
 }
 
@@ -448,7 +518,7 @@ main {
   padding-left: 18px;
   font-weight: 400;
   color: #939594;
-  font-size: 13px;
+  font-size: 130%;
   line-height: 40px;
 }
 
@@ -496,7 +566,7 @@ main {
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 140%;
   line-height: 40px;
   margin-top: 16px;
 }
@@ -522,7 +592,8 @@ main {
 .tag-link {
   font-weight: 700;
   text-transform: uppercase;
-  color: #000000;ont-size: 12px;
+  color: #000000;
+  font-size: 120%;
   line-height: 40px;
   text-decoration: none;
   margin-right: 5px;
@@ -562,7 +633,7 @@ main {
 .categories-link-items {
   font-weight: 700;
   text-transform: talize;
-  font-size: 12px;
+  font-size: 120%;
   line-height: 36px;
   color: #b59f5b;
   margin-left: 5px;
@@ -647,16 +718,15 @@ main {
 .product_description{
   font-weight: 400;
   color: #000000;
-  font-size: 15px;
+  font-size: 150%;
   line-height: 22px;
 }
 .shop_link{
   font-weight: 400;
   color: #a88f54;
-  font-size: 15px;
-  line-height: 22px;
+  font-size: 150%;
+  }
 
-}
 .shop_link:hover{
   text-decoration: underline;
 }
@@ -676,7 +746,7 @@ main {
     color: #222;
     font-weight: 700;
     display: flex;
-    font-size: 14px;
+    font-size: 140%;
 }
 .product__price_old{
     text-decoration: line-through;
@@ -687,14 +757,14 @@ main {
 } 
 
 .product__price-value{
-    font-size: 20px;
+    font-size: 200%;
     font-weight: 700;
     color: #222;
     line-height: 1;
     display: flex;
 } 
 .product__rub {
-  font-size: 20px;
+  font-size: 200%;
     font-weight: 700;
     color: #222;
     line-height: 1;
@@ -709,7 +779,7 @@ main {
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 140%;
   margin: auto;
   padding: 
 } 
@@ -724,7 +794,8 @@ main {
 /* ========FOOTER-SOCIALS======== */
 
 .footer-content-wraper{
-  width: 1170px;
+  width: 100%;
+  max-width: 1200px;
   margin-bottom: 30px;
   margin: 0 auto;
 }
@@ -741,23 +812,23 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
-  width: 367px;
+  width: 30.5%;
   padding: 0;
   margin: 0 auto;
 }
 
 .socials-list-item {
   display: block;
-  width: 25px;
+  width: calc((100% - 60px) / 5 );
 }
 
 .socials-list-item:not(:first-child) {
-  margin-left: 15px;
+  margin-left: 4%;
 }
 
 .socials-icon {
   display: block;
-  width: 25px;
+  width: 100%;
   height: 25px;
   background-position: center center;
   background-size: 20px;
@@ -788,7 +859,8 @@ main {
 .copyright {
   margin-left: auto;
   margin-right: auto;
-  font-weight: bol font-size: 12px;
+  font-weight: bold;
+  font-size: 120%;
   line-height: 40px;
   text-align: center;
   margin-top: 70px;
