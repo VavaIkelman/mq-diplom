@@ -9,6 +9,47 @@
 <body>
 
 
+<!-- ===========================POPUP================================= -->
+<div class="popup">
+  <div class="popup_box">
+    <button class="popup_close">
+      <span class="popup_close_text">закрыть окно</span>
+    </button> 
+    <header class="popup_title">ваш фидбек</header> 
+    <div class="popup_content">
+      <div class="form_select">
+        <label class="form_visits">
+          <span class="form_visits_label">Как часто вы заходите на сайт?</span>
+          <select class="select_visits">
+            <option selected>почти каждый день</option>
+            <option >еженедельно</option>
+            <option >ежемесячно</option>
+          </select>
+        </label>
+      </div>
+    </div>
+    <div class="form-subscribe">
+      <span class="form-hint">Вы подписаны на e-mail рассылку?</span>
+      <label class="radio-group">
+        <input type="radio" class="radio" name="radio-group">
+        <span class="radio-group-text">да</span>
+      </label>
+      <label class="radio-group">
+        <input type="radio" class="radio" name="radio-group">
+        <span class="radio-group-text">нет</span>
+      </label>
+    </div>
+    <div class="form_content_ask">
+      <label class="form-group">
+        <span class="form-ask">Расскажите, какой контент вы  хотели бы видеть на нашем сайте?</span>
+        <textarea class="field_textarea" placeholder="Может, больше рецептов?" required=""></textarea>
+      </label>
+    </div>
+    <div class="form-sent">
+      <button class="button_popup">Отправить</button>
+    </div>
+  </div>  
+</div>
   <!-- ========================HEADER================================= -->
 
 	<header class="header">
@@ -17,7 +58,10 @@
         <img src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg" class="logo" alt="logo noemi">
         <nav class="header-menu">
           <div class="header_menu_burger">
+            <input id="menu__toggle" type="checkbox">
+            <label class="menu__btn" for="menu__toggle">
               <span></span>
+            </label>  
           </div>
           <ul class="header-menu-list">
             <li class="header-menu-list-items">
@@ -251,35 +295,52 @@
              <img src="../mq-diplom/images/2.jpg" class="latest-post-img" width="70" alt="human on the beach">
              <div>
                <time class="latest-posts-block-card-date" datetime="2019-06-14">14 июня 2019</time>
-               <h3 class="latest-content-post-title">10 мест, ради которых стоит проснуться</h3>
+               <a class="latest-content-post-title" href="#0">
+                <h3 class="latest-content-post-title">10 мест, ради которых стоит проснуться
+              </h3>
+              </a>
              </div>
            </li>
            <li class="latest-post">
              <img src="images/151.jpg" class="latest-post-img" width="70" alt="yoga on the beach">
              <div>
                <time class="latest-posts-block-card-date" datetime="2019-06-14">14 июня 2019</time>
-               <h3 class="latest-content-post-title">йога для домашних</h3>
+               <a class="latest-content-post-title" href="#0">
+                <h3 class="latest-content-post-title">йога для домашних
+              </h3>
+            </a>
+             
              </div>
            </li>
            <li class="latest-post">
              <img src="images/45.jpg" class="latest-post-img" width="70" alt="armchair">
              <div>
                <time class="latest-posts-block-card-date" datetime="2015-06-19">14 июня 2019</time>
-               <h3 class="latest-content-post-title">как мы превратили балкон в класное место</h3>
+               <a class="latest-content-post-title" href="#0">
+                <h3 class="latest-content-post-title">как мы превратили балкон в класное место
+              </h3>
+            </a>
+             
              </div>
            </li>
            <li class="latest-post">
              <img src="images/501.jpg" class="latest-post-img" width="70" alt="breackfast on the table">
              <div>
                <time class="latest-posts-block-card-date" datetime="2019-06-14">14 июня 2019</time>
-               <h3 class="latest-content-post-title">кулинарный подход к науке</h3>
+               <a class="latest-content-post-title" href="#0">
+                <h3 class="latest-content-post-title">кулинарный подход к науке
+              </h3>
+            </a>
              </div>
            </li>
            <li class="latest-post">
              <img src="images/7.jpg" class="latest-post-img" width="70" alt="three girls">
              <div>
                <time class="latest-posts-block-card-date" datetime="2019-06-14">14 июня 2019</time>
-               <h3 class="latest-content-post-title">лучшие прически для распущенных волос</h3>
+              <a class="latest-content-post-title" href="#0">
+                <h3 class="latest-content-post-title">лучшие прически для распущенных волос
+              </h3>
+            </a>
              </div>
            </li>
          </ul>
@@ -364,7 +425,7 @@
  </div>
 
 
- <!-- ======================SHOP========================== -->
+ <!-- ==========================SHOP========================== -->
 
 
   <div class="shop_container">
@@ -517,5 +578,6 @@
      </div>
    </div>
  </footer>
+ 
 </body>
 </html>
