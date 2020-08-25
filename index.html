@@ -11,7 +11,7 @@
 
 <!-- ===========================POPUP================================= -->
 <div class="popup">
-  <div class="popup_box">
+  <form action="mailto:#0" class="popup_box">
     <button class="popup_close">
       <span class="popup_close_text">закрыть окно</span>
     </button> 
@@ -46,9 +46,9 @@
       </label>
     </div>
     <div class="form-sent">
-      <button class="button_popup">Отправить</button>
+      <input type="submit" name="button_popup" class="button_popup">Отправить</input>
     </div>
-  </div>  
+  </form>  
 </div>
   <!-- ========================HEADER================================= -->
 
@@ -110,7 +110,7 @@
                   </li>
  				        </ul>
  				        <h2>
-                  <a class="content_title trends_content_title" href="#0">сейчас в тренде: сад на подоконнике</a>
+                  <a class="trends_content_title" href="#0">сейчас в тренде: сад на подоконнике</a>
                 </h2>
  				      </div>
  			      </li>
@@ -122,7 +122,7 @@
                   </li>
                 </ul>
                 <h2>
-                  <a class="content_title trends_content_title" href="#0">сыры на красивых  картинках из интернета: какие они на вкус?</a>
+                  <a class="trends_content_title" href="#0">сыры на красивых  картинках из интернета: какие они на вкус?</a>
                 </h2>
               </div>
             </li>
@@ -137,7 +137,7 @@
                    </li>
                 </ul>
                 <h2>
-                  <a class="content_title trends_content_title" href="#0">собираемся в первый поход в горы</a>
+                  <a class="trends_content_title" href="#0">собираемся в первый поход в горы</a>
                 </h2>  
               </div>
             </li>
@@ -152,7 +152,7 @@
                   </li>
                 </ul>
                 <h2>
-                  <a class="content_title trends_content_title" href="#0">сейчас в тренде: сколько витамина с в лимонах?</a>
+                  <a class="trends_content_title" href="#0">сейчас в тренде: сколько витамина с в лимонах?</a>
                 </h2>
               </div>
             </li>
@@ -166,9 +166,7 @@
 
 
  <div class="page">
-   <div class="container">
-    <div class="container_page">
-    <main class="page-main">
+  <main class="page-main">
        <article class="post">
           <img src="images/last-post1.jpg"  class="img-post" alt="human on the beach">
           <div class="frame">
@@ -180,13 +178,16 @@
                 <a class="category_tag_link" href="#0">health</a>
               </li>
             </ul>
-            <h2 class="content_title">10 мест, ради которых стоит проснуться на рассвете
+            <h2>
+              <a class="content_title" href="#0">10 мест, ради которых стоит проснуться на рассвете</a>
             </h2>
             <div>
               <time class="content-posts-block-card-date" datetime="2019-06-10">10 июня 2019 </time>
               <a class="content-author" href="#0">Неизвестный автор</a>
             </div>
-            <p class="post-text">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны... Музеи еще закрыты. Что посмотреть?</p>
+            <div class="post_description">
+              <p class="post-text">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны... Музеи еще закрыты. Что посмотреть?</p>
+              </div>
           </div>
        </article>
        <article class="post">
@@ -200,12 +201,16 @@
                <a class="category_tag_link" href="#0">lifestyle</a>
              </li>
            </ul>
-           <h2 class="content_title">йога для начинающих в домашних условиях</h2>
+           <h2>
+            <a class="content_title" href="#0">йога для начинающих в домашних условиях</a>
+           </h2>
            <div>
              <time class="content-posts-block-card-date" datetime="2019-06-10">10 июня 2019 </time>
              <a class="content-author" href="#0">Неизвестный автор</a>
            </div>
-           <p class="post-text">Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.</p>
+           <div class="post_description">
+             <p class="post-text">Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.</p>
+            </div>
          </div>
        </article>
        <article class="post">
@@ -219,13 +224,17 @@
                <a class="category_tag_link" href="#0"></a>
              </li>
            </ul>
-           <h2 class="content_title">Лучшие музыкальные фестивали этого лета</h2>
+           <h2>
+            <a class="content_title" href="#0">Лучшие музыкальные фестивали этого лета</a>
+           </h2>
            <div>
              <time class="content-posts-block-card-date" datetime="2019-06-10">10 июня 2019</time>
              <a class="content-author" href="#0">Неизвестный автор</a>
            </div>
-           <p class="post-text">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьете свою палатку?</p>
+           <div class="post_description">
+              <p class="post-text">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьете свою палатку?</p>
            <p class="post-text">Мы составили список лучших летних фестивалей по всему миру.</p>
+           </div>
          </div>
        </article>
        <article class="post">
@@ -239,12 +248,16 @@
                <a class="category_tag_link" href="#0">food</a>
              </li>
            </ul>
-           <h2 class="content_title">Наукоёмкий подход к кулинарии</h2>
+           <h2 >
+            <a class="content_title" href="#0">Наукоёмкий подход к кулинарии</a>
+           </h2>
            <div>
              <time class="content-posts-block-card-date" datetime="2019-06-10">10 июня 2019 </time>
              <a class="content-author" href="#0">Неизвестный автор</a>
            </div>
-           <p class="post-text">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</p>
+           <div class="post_description">
+             <p class="post-text">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</p>
+           </div>
          </div>
        </article>
        <article class="post">
@@ -261,12 +274,16 @@
                <a class="category_tag_link" href="#0">art</a>
              </li>
            </ul>
-           <h2 class="content_title">делаем модные принты на подушках для интерьера</h2>
+           <h2>
+            <a class="content_title" href="#0">делаем модные принты на подушках для интерьера</a>
+          </h2>
            <div>
              <time class="content-posts-block-card-date" datetime="2019-06-10">10 июня 2019 </time>
              <a class="content-author" href="#0">Неизвестный автор</a>
            </div>
-           <p class="post-text">Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</p>
+           <div class="post_description">
+              <p class="post-text">Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</p>
+            </div>
          </div>
        </article>
     </main>
@@ -279,28 +296,28 @@
          <ul class="latest-post-list">
            <li class="latest-post">
              <img src="../mq-diplom/images/2.jpg" class="latest-post-img" width="70" alt="human on the beach">
-             <div>
+             <div class="latest_post_box">
                <time class="latest-posts-block-card-date" datetime="2019-06-14">14 июня 2019</time>
-               <a class="latest-content-post-title" href="#0">
-                <h3 class="latest-content-post-title">10 мест, ради которых стоит проснуться
+               <h3>
+                <a class="latest-content-post-title" href="#0">10 мест, ради которых стоит проснуться
+                </a>
               </h3>
-              </a>
-             </div>
+              </div>
            </li>
            <li class="latest-post">
              <img src="images/151.jpg" class="latest-post-img" width="70" alt="yoga on the beach">
-             <div>
+             <div class="latest_post_box">
                <time class="latest-posts-block-card-date" datetime="2019-06-14">14 июня 2019</time>
-               <a class="latest-content-post-title" href="#0">
-                <h3 class="latest-content-post-title">йога для домашних
-              </h3>
-            </a>
-             
+               <h3>
+                <a class="latest-content-post-title" href="#0">
+                йога для домашних
+                </a>
+             </h3>
              </div>
            </li>
            <li class="latest-post">
              <img src="images/45.jpg" class="latest-post-img" width="70" alt="armchair">
-             <div>
+             <div class="latest_post_box">
                <time class="latest-posts-block-card-date" datetime="2015-06-19">14 июня 2019</time>
                <a class="latest-content-post-title" href="#0">
                 <h3 class="latest-content-post-title">как мы превратили балкон в класное место
@@ -311,7 +328,7 @@
            </li>
            <li class="latest-post">
              <img src="images/501.jpg" class="latest-post-img" width="70" alt="breackfast on the table">
-             <div>
+             <div class="latest_post_box">
                <time class="latest-posts-block-card-date" datetime="2019-06-14">14 июня 2019</time>
                <a class="latest-content-post-title" href="#0">
                 <h3 class="latest-content-post-title">кулинарный подход к науке
@@ -321,12 +338,12 @@
            </li>
            <li class="latest-post">
              <img src="images/7.jpg" class="latest-post-img" width="70" alt="three girls">
-             <div>
+             <div class="latest_post_box">
                <time class="latest-posts-block-card-date" datetime="2019-06-14">14 июня 2019</time>
-              <a class="latest-content-post-title" href="#0">
-                <h3 class="latest-content-post-title">лучшие прически для распущенных волос
-              </h3>
-            </a>
+                <h3>
+                  <a class="latest-content-post-title" href="#0">лучшие прически для распущенных волос
+                  </a>
+                </h3>
              </div>
            </li>
          </ul>        
@@ -412,9 +429,7 @@
          </ul>
        </section>
      </aside>
-    </div>
-   </div>
- </div>
+  </div>
 
 
  <!-- ==========================SHOP========================== -->
@@ -446,12 +461,10 @@
               <footer class="product__footer">
                   <div class="product__prices">
                     <span class="product__price product__price_old">
-                      <span class="product__price_old">1000</span>
-                      <span class="product__rub_old">₽</span>
+                      <span class="product__price_old">1000 ₽</span>
                     </span>
                     <span class="product__price">
-                      <span class="product__price-value">800</span>
-                      <span class="product__rub">₽</span>
+                      <span class="product__price-value">800 ₽</span>
                     </span>
                   </div>
                   <button class="product__button" type="button">в магазин</button>
@@ -480,8 +493,7 @@
         <footer class="product__footer">
           <div class="product__prices">
             <span class="product__price">
-              <span class="product__price-value">3500</span>
-              <span class="product__rub">₽</span>
+              <span class="product__price-value">3500 ₽</span>
             </span>
           </div>
           <button class="product__button" type="button">в магазин</button>
@@ -510,12 +522,10 @@
             <footer class="product__footer">
               <div class="product__prices">
                   <span class="product__price product__price_old">
-                    <span class="product__price_old">500</span>
-                    <span class="product__rub_old">₽</span>
+                    <span class="product__price_old">500 ₽</span>
                   </span>
                   <span class="product__price">
-                    <span class="product__price-value">400</span>
-                    <span class="product__rub">₽</span>
+                    <span class="product__price-value">400 ₽</span>
                   </span>
               </div>
               <button class="product__button" type="button">в магазин
