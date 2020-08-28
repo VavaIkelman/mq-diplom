@@ -258,6 +258,7 @@ img {
   background-color: #b59f5b;
   margin-top: 25px;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .button_popup:hover{
